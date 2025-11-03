@@ -16,9 +16,19 @@ public class Test1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int vstup = sc.nextInt();
-        for (int i=0;i<=vstup;i++) {
-            System.out.println(i);
-        }
+        int prumer = 0;
+        int pocetInt = 0;
+        
+       while (vstup!=0) {
+           vstup = sc.nextInt();
+           prumer = prumer + vstup;
+           pocetInt++;
+       }
+       
+       if (vstup == 0) {
+            System.out.println("Prumer je " + prumer/pocetInt);
+       }
+    
     }
     
 }
